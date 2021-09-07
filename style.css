@@ -1,0 +1,77 @@
+body{
+    margin: 0px;
+    background-color:rgb(32, 44, 5);
+}
+input{
+    width: 97%;
+    margin: auto;
+    height: 15px;
+   text-align: center;
+   border: none;
+}
+.button-container{
+    text-align: center;
+}
+.check-btn{
+    margin: 1rem 0rem;
+    border-radius: 0.5rem;
+}
+.check-btn:hover{
+    background-color: darkolivegreen;
+    cursor: pointer;
+}
+.outside-div{
+    margin-left: 0.5rem;
+    max-width: 500px;
+    margin: auto;
+    padding: 2rem 0rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px rgb(142, 248, 142);
+    background-color: rgb(183, 196, 179);
+}
+.inside-div{
+    max-width: 400px;
+    margin: auto;
+}
+.heading{
+    text-align: center;
+    color: rgb(46, 48, 44);
+    text-shadow: 0px 0px 5px rgb(75, 78, 78);
+}
+p{
+    text-align: center;
+}
+label{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0rem;
+}
+.error-message{
+    text-align: center;
+    color: rgb(59, 80, 24);
+    text-shadow: 0px 0px 5px rgb(25, 41, 25);
+    padding: 2rem 0rem;
+}
+.table-manager{
+    margin: auto;
+}
+table,th,td{
+    border:1px solid black;
+}
+.gap{
+    height: 100px;
+}
+footer{
+    background-color: rgb(194, 201, 192);
+    height:130px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+footer h3{
+    text-align: center;
+    padding-top: 2rem;
+}
+footer p{
+    font-size: 0.8rem;
+}
