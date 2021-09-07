@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register Manager App</title>
+
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
+    <link rel="shortcut icon" type="image/css" href="/Images/money.png" />
+</head>
+<body>
+    <div class="outside-div">
+        <div class="inside-div">
+        <h1 class="heading">The Cash Register Manager</h1>
+        <p>Enter the bill amount and cash given by the customer and get to know the minimum number of notes to return.</p>
+        <label for="bill-amount">Bill amount:</label><br>
+        <input class="bill-amount" name="bill-amount" placeholder="Enter the bill amount to be paid here"><br>
+        <label>Cash Given:</label><br>
+        <input class="cash-given" name="cash-given" placeholder="Enter the total cash you gave here"><br>
+        <div class="button-container">
+        <button class="check-btn"> Check </button>
+        </div>
+        <div class="error-message"></div>
+
+        <table class="table-manager">
+        <caption>Notes to be returned:</caption>
+        
+        <tr>
+            <th>No. of Notes</th>
+            <td class="notes-number"></td>
+            <td class="notes-number"></td>
+            <td class="notes-number"></td>
+            <td class="notes-number"></td>
+            <td class="notes-number"></td>
+            <td class="notes-number"></td>
+            <td class="notes-number"></td>
+            <td class="notes-number"></td>
+        </tr>
+        <tr>
+            <th>Notes</th>
+            <td class="notes">2000</td>
+            <td class="notes">500</td>
+            <td class="notes">100</td>
+            <td class="notes">50</td>
+            <td class="notes">20</td>
+            <td class="notes">10</td>
+            <td class="notes">5</td>
+            <td class="notes">1</td>
+        </tr>
+        </table>
+        </div>
+    </div>
+    <div class="gap"></div>
+    <footer>
+        <h3>The Cash💸 Rejister Manager App</h3>
+        <p>Made By 🤍 Namrata Jain © Copyright</p>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
