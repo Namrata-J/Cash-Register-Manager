@@ -1,77 +1,136 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    box-sizing: border-box;
+    color: rgb(133, 148, 113);
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(40 54 8);
     margin: 0px;
-    background-color:rgb(32, 44, 5);
+    padding: 1rem;
 }
-input{
-    width: 97%;
-    margin: auto;
-    height: 15px;
-   text-align: center;
-   border: none;
+
+input {
+    border: none;
+    color: inherit;
+    outline: none;
+    padding: 0.5rem;
+    width: 100%;
 }
-.button-container{
+
+input::placeholder {
+    color: inherit;
+}
+
+.outside-div {
+    background: rgba(76, 100, 54, 0.3);
+}
+
+input,
+.button-container,
+.heading,
+p,
+label,
+.error-message {
     text-align: center;
 }
-.check-btn{
+
+input,
+.check-btn {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 0.2rem;
+}
+
+.check-btn {
+    border: 1px solid rgba(0, 0, 0, 0.3);
     margin: 1rem 0rem;
+    padding: 0.3rem 0.5rem;
+}
+
+.check-btn:hover {
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.outside-div {
+    max-width: 30rem;
+    margin: 1rem auto;
+    padding: 1rem;
     border-radius: 0.5rem;
 }
-.check-btn:hover{
-    background-color: darkolivegreen;
-    cursor: pointer;
+
+.inside-div {
+    max-width: 95%;
 }
-.outside-div{
-    margin-left: 0.5rem;
-    max-width: 500px;
-    margin: auto;
-    padding: 2rem 0rem;
-    border-radius: 2rem;
-    box-shadow: 0px 0px 10px rgb(142, 248, 142);
-    background-color: rgb(183, 196, 179);
-}
-.inside-div{
-    max-width: 400px;
+
+.inside-div,
+input,
+.table-manager {
     margin: auto;
 }
-.heading{
-    text-align: center;
-    color: rgb(46, 48, 44);
-    text-shadow: 0px 0px 5px rgb(75, 78, 78);
+
+.heading {
+    font-size: 1.8rem;
 }
-p{
-    text-align: center;
+
+.heading,
+p {
+    padding-bottom: 0.5rem;
 }
-label{
+
+p,
+caption,
+footer p {
+    font-size: 0.9rem;
+}
+
+label {
     display: inline-block;
+    font-weight: bold;
+    padding: 1rem 0rem 0.5rem 0rem;
     width: 100%;
-    text-align: center;
-    margin: 0.5rem 0rem;
 }
-.error-message{
-    text-align: center;
-    color: rgb(59, 80, 24);
-    text-shadow: 0px 0px 5px rgb(25, 41, 25);
-    padding: 2rem 0rem;
-}
-.table-manager{
-    margin: auto;
-}
-table,th,td{
-    border:1px solid black;
-}
-.gap{
-    height: 100px;
-}
-footer{
-    background-color: rgb(194, 201, 192);
-    height:130px;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-footer h3{
-    text-align: center;
-    padding-top: 2rem;
-}
-footer p{
+
+label,
+.error-message,
+th,
+td {
     font-size: 0.8rem;
+}
+
+.error-message {
+    color: rgb(195, 49, 49);
+    padding: 0.5rem 0rem 1.5rem 0rem;
+}
+
+caption {
+    padding-bottom: 0.5rem;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(31, 42, 12);
+}
+
+th,
+td {
+    padding: 0.1rem 0.2rem;
+}
+
+footer div {
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.gap {
+    height: 5rem;
 }
